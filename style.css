@@ -2,10 +2,13 @@
     padding: 0px;
     margin: 0px;
     user-select: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
 }
 body{
     background-color: rgb(27, 27, 26);
     overflow: hidden;
+  
 }
 nav{
     background-color: black;
@@ -118,7 +121,7 @@ nav>h1{
   }
  
   .animate-right{
-    animation: rightball 2s linear 1s infinite;
+    animation: rightball 2s linear infinite;
   }
   
   @keyframes rightball{

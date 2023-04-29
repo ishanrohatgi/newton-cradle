@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    user-select: none;
+}
+body{
+    background-color: rgb(27, 27, 26);
+}
+nav{
+    background-color: black;
+    color: rgb(25, 197, 9);
+    width: 100vw;
+    height: 60px;
+   
+}
+nav>h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+.main{
+    padding-top:30px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-around;
+    height: 85vh;
+}
+.select-area{
+  border-radius: 20px;
+  display: flex;
+  background-color: rgb(90, 88, 88);
+  height: 25vh;
+  justify-content: space-around;
+  align-items: center;
+  
+
+}
+.select-area > button{
+   background-color: rgb(25, 197, 9);
+   color: white;
+   border: none;
+   height: 40px;
+   width: 75px ;
+   border-radius: 50px;
+   font-weight: bolder;
+   cursor:pointer;
+}
+.select-area > button:active{
+    background-color: white;
+    color:rgb(25, 197, 9) ;
+}
+.cradle{
+    border-radius: 20px;
+    background-color:rgb(90, 88, 88) ;
+    height: 57vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+.cradle-box{
+    height: 80%;
+    width: 60%;
+    display: flex;
+    border-top:10px solid white;
+    justify-content: center;
+    gap: 8.5%;
+    position: relative;
+   
+}
+
+.cradle-box .box{
+    display: inline-block;
+    width: 0.5rem;
+    height: 70%;
+    background-color: white;
+    top:-2px;
+    position: relative;
+    transform-origin: top;
+}
+
+.cradle-box .box::before {
+    content: "";
+    position: absolute;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    background-color: rgb(25, 197, 9);
+    outline: 1px solid black;
+    bottom: 0%;
+    transform: translate(-45%);
+  }
+
+  .animate-left{
+    animation: leftball 2s linear infinite;
+  }
+  
+  @keyframes leftball{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(50deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+  }
+ 
+  .animate-right{
+    animation: rightball 2s linear 1s infinite;
+  }
+  
+  @keyframes rightball{
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-50deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    0% {
+        transform: rotate(0deg);
+    }
+  }
+
+  @media screen and (max-width:500px) {
+    .cradle-box .box{
+        height: 30%;
+        width: 0.2rem;
+        
+    }
+    .cradle-box{
+        top:25%;
+        gap:15%;
+        border-top: 4px solid wheat;
+        align-items: top;
+    }
+    .cradle-box .box::before{
+        height: 1.9rem;
+        width: 1.9rem;
+    }
+  }

@@ -33,7 +33,7 @@ nav>h1{
   display: flex;
   background-color: rgb(90, 88, 88);
   height: 25vh;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   
 
@@ -137,6 +137,9 @@ nav>h1{
   }
 
   @media screen and (max-width:500px) {
+    .cradle{
+        height: 50vh;
+    }
     .cradle-box .box{
         height: 30%;
         width: 0.2rem;

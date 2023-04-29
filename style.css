@@ -102,7 +102,7 @@ nav>h1{
   }
 
   .animate-left{
-    animation: leftball 2s linear infinite;
+    animation: leftball 1.5s linear infinite;
   }
   
   @keyframes leftball{
@@ -121,7 +121,7 @@ nav>h1{
   }
  
   .animate-right{
-    animation: rightball 2s linear infinite;
+    animation: rightball 1.5s linear infinite;
   }
   
   @keyframes rightball{
